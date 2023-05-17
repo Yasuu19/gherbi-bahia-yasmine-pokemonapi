@@ -13,7 +13,7 @@ function PokemonList({ searchTerm = "" }) {
     setPokemons(res.data.results);
   }
 
-  //A chaque changement on appelle la fonction getData qui appelle l'API
+  //Au chargement de la page on appelle la fonction getData qui appelle l'API
   useEffect(() => {
     getData();
   }
